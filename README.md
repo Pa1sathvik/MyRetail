@@ -74,5 +74,26 @@ Credential details :-- Username ===> "user"
 ###Errors/Validations: All the validation and error message are handled porperly.Application can display messages to the user.
 
 
+**##Technologies Used**:
+Spring Boot - https://projects.spring.io/spring-boot/
+OracleDB - https://www.oracle.com/database/
+Swagger - http://swagger.io/
+Maven - https://mvnrepository.com/
+Netflix Hystrix - https://github.com/Netflix/Hystrix 
+
+**##Instructions to Setup**
+Install OracleDB in your system - https://www.oracle.com/webfolder/technetwork/tutorials/obe/db/12c/r1/Windows_DB_Install_OBE/Installing_Oracle_Db12c_Windows.html
+
+Set the oracle db parameters as mentioned below:-
+ ```
+ URL : jdbc:oracle:thin:@localhost:1521/localdb
+ UserName : iat
+ Password : iat
+ ```
+Install Maven - https://maven.apache.org/install.html
+Clone the code or download from git repository - https://github.com/Pa1sathvik/MyRetail.git
+Open browser and visit Swagger. http://localhost:8080/swagger-ui.html
+Swagger documentation explains the expected request and response for GET and PUT requests.
+Open browser and visit Hystrix dashboard http://localhost:8080/swagger-ui.html for monitoring fault tolerance and circuit breaker pattern of My Retail REST API's
 	
 	
