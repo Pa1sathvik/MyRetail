@@ -36,7 +36,7 @@ Credential details :-- Username ===> "user"
 
 ###Errors/Validations: All the validation and error message are handled porperly.Application can display messages to the user.
 
-![](images/GETAPI.png)
+![](images/GETAPI.PNG)
 
 
 **## Update Product Price in the datastore**:
@@ -53,6 +53,8 @@ Credential details :-- Username ===> "user"
 
 ###Errors/Validations: All the validation and error message are handled porperly.Application can display messages to the user.
 
+![](images/PUTAPI.PNG)
+
 **## Create Product  in the datastore**:
 
 ###Input: The user/client application can do a POST request with input similar to the response received in GET and should be able to create the product details in the datastore if product is not present. The request is done at the same path "/products/{id}". Authorization should be added in request header with basic security credentials.
@@ -65,6 +67,7 @@ Credential details :-- Username ===> "user"
 
 ###Errors/Validations: All the validation and error message are handled porperly.Application can display messages to the user.
 
+![](images/POSTAPI.PNG)
 
 **## Search Products in the datastore in the given price range**:
 
@@ -78,6 +81,7 @@ Credential details :-- Username ===> "user"
 
 ###Errors/Validations: All the validation and error message are handled porperly.Application can display messages to the user.
 
+![](images/GETSearchAPI.PNG)
 
 **##Technologies Used**:
 
@@ -108,9 +112,13 @@ Set the oracle db parameters as mentioned below:-
 ##**Swagger UI:**
 Swagger displays the following information for an API method by default.
 
+![](images/SwaggerUI.PNG)
+
 
 ##**Netflix Hystrix dashboard:**
 Hystrix dashboard is used to monitor REST API performance.
+
+![](images/HystrixDashboard.PNG)
 
 
 
