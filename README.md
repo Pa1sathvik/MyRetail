@@ -13,6 +13,8 @@ MyRetail RESTful service provides the client application ability to:
   
 ```
 
+**Fault tolerance and circuit breaker pattern is added to REST API's which will handle accordingly in API failure use cases.**
+
 **## Basic Authentication for security to REST API**:
 
 All the REST API's in My retals project are secured with basic authentication.
