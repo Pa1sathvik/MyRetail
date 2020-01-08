@@ -104,6 +104,9 @@ Set the oracle db parameters as mentioned below:-
 Swagger displays the following information for an API method by default.
 
 
+##**Netflix Hystrix dashboard:**
+Hystrix dashboard is used to monitor REST API performance.
+
 
 
 	
