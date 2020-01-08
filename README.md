@@ -1,7 +1,8 @@
 **#MyRetail REST API**
 
 MyRetail RESTful service provides the client application ability to:
-...
+```
+  
   1. Retrieve Product and Price information by Product Id.
 	
   2. Send request to modify the price information in the database.
@@ -9,7 +10,17 @@ MyRetail RESTful service provides the client application ability to:
   3. Update / Create product information details in database.
   
   4. Search for Products in repository between prices.  
-...
+  
+```
+
+**## Basic Authentication for security to REST API**:
+
+All the REST API's in My retals project are secured with basic authentication.
+
+Credential details :-- Username ===> "user"
+                       Password ===> "password"
+
+
 	
  **##Get Product Information**:
 	
