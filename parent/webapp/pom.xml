@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.target</groupId>
+		<artifactId>myRetail</artifactId>
+		<version>${project.build.version}</version>
+	</parent>
+	<artifactId>webapp</artifactId>
+	<packaging>jar</packaging>
+	<name>webapp</name>
+	<description>MyRetail application--WebApp</description>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<swagger.version>2.9.2</swagger.version>
+		<swagger-annotations.version>1.5.21</swagger-annotations.version>
+		<swagger-models.version>1.5.21</swagger-models.version>
+
+	</properties>
+	<dependencies>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>${swagger.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${swagger.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-annotations</artifactId>
+			<version>${swagger-annotations.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-models</artifactId>
+			<version>${swagger-models.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.target</groupId>
+			<artifactId>service</artifactId>
+			<version>${project.build.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.target</groupId>
+			<artifactId>authentication</artifactId>
+			<version>${project.build.version}</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.target</groupId>
+			<artifactId>restcontroller</artifactId>
+			<version>${project.build.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.el</artifactId>
+			<version>3.0.1-b08</version>
+		</dependency>
+
+
+	</dependencies>
+
+	<build>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>2.3</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<transformers>
+								<!-- start -->
+								<transformer
+									implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+									<resource>META-INF/spring.handlers</resource>
+								</transformer>
+								<transformer
+									implementation="org.springframework.boot.maven.PropertiesMergingResourceTransformer">
+									<resource>META-INF/spring.factories</resource>
+								</transformer>
+								<transformer
+									implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+									<resource>META-INF/spring.schemas</resource>
+								</transformer>
+								<transformer
+									implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
+
+								<!-- end -->
+
+								<transformer
+									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+									<mainClass>com.target.myretail.MyRetailApplication</mainClass>
+								</transformer>
+							</transformers>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+
+		<!-- <finalName>juggernaut</finalName> -->
+	</build>
+
+</project>
