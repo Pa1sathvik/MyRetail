@@ -97,6 +97,14 @@ Set the oracle db parameters as mentioned below:-
 3. Clone the code or download from git repository - https://github.com/Pa1sathvik/MyRetail.git
 4. Open browser and visit Swagger. http://localhost:8080/swagger-ui.html
 5. Swagger documentation explains the expected request and response for GET and PUT requests.
-6. Open browser and visit Hystrix dashboard http://localhost:8080/swagger-ui.html for monitoring fault tolerance and circuit breaker pattern of My Retail REST API's
+6. Open browser and visit Hystrix dashboard http://localhost:8080/swagger-ui.html for monitoring fault tolerance and circuit breaker pattern of My Retail REST API's.
+
+
+##**Swagger UI:**
+Swagger displays the following information for an API method by default.
+
+
+
+
 	
 	
