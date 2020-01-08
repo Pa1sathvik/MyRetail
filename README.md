@@ -36,6 +36,9 @@ Credential details :-- Username ===> "user"
 
 ###Errors/Validations: All the validation and error message are handled porperly.Application can display messages to the user.
 
+![](images/GETAPI.png)
+
+
 **## Update Product Price in the datastore**:
 
 ###Input: The user/client application can do a PUT request with input similar to the response received in GET and should be able to modify the price in the datastore. The request is done at the same path "/products/{id}". Authorization should be added in request header with basic security credentials.
