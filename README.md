@@ -76,16 +76,16 @@ Credential details :-- Username ===> "user"
 
 **##Technologies Used**:
 
-1.Spring Boot - https://projects.spring.io/spring-boot/
-2.OracleDB - https://www.oracle.com/database/
-3.Swagger - http://swagger.io/
-4.Maven - https://mvnrepository.com/
-5.Netflix Hystrix - https://github.com/Netflix/Hystrix 
+1. Spring Boot - https://projects.spring.io/spring-boot/
+2. OracleDB - https://www.oracle.com/database/
+3. Swagger - http://swagger.io/
+4. Maven - https://mvnrepository.com/
+5. Netflix Hystrix - https://github.com/Netflix/Hystrix 
 
 
 **##Instructions to Setup**
 
-1.Install OracleDB in your system - https://www.oracle.com/webfolder/technetwork/tutorials/obe/db/12c/r1/Windows_DB_Install_OBE/Installing_Oracle_Db12c_Windows.html
+1. Install OracleDB in your system - https://www.oracle.com/webfolder/technetwork/tutorials/obe/db/12c/r1/Windows_DB_Install_OBE/Installing_Oracle_Db12c_Windows.html
 
 Set the oracle db parameters as mentioned below:-
  ```
@@ -93,10 +93,10 @@ Set the oracle db parameters as mentioned below:-
  UserName : iat
  Password : iat
  ```
-2.Install Maven - https://maven.apache.org/install.html
-3.Clone the code or download from git repository - https://github.com/Pa1sathvik/MyRetail.git
-4.Open browser and visit Swagger. http://localhost:8080/swagger-ui.html
-5.Swagger documentation explains the expected request and response for GET and PUT requests.
-6.Open browser and visit Hystrix dashboard http://localhost:8080/swagger-ui.html for monitoring fault tolerance and circuit breaker pattern of My Retail REST API's
+2. Install Maven - https://maven.apache.org/install.html
+3. Clone the code or download from git repository - https://github.com/Pa1sathvik/MyRetail.git
+4. Open browser and visit Swagger. http://localhost:8080/swagger-ui.html
+5. Swagger documentation explains the expected request and response for GET and PUT requests.
+6. Open browser and visit Hystrix dashboard http://localhost:8080/swagger-ui.html for monitoring fault tolerance and circuit breaker pattern of My Retail REST API's
 	
 	
