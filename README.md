@@ -1,18 +1,19 @@
-#MyRetail REST API
+**#MyRetail REST API**
 
 MyRetail RESTful service provides the client application ability to:
 ...
-
   1. Retrieve Product and Price information by Product Id.
 	
   2. Send request to modify the price information in the database.
 	
   3. Update / Create product information details in database.
+  
+  4. Search for Products in repository between prices.  
 ...
 	
  **##Get Product Information**:
 	
-###Input: The client application does a GET request at the path "/products/{id}" for a product
+###Input: The client application does a GET request at the path "/products/{id}" for a product with the basic authentication credentials.
 
 ###Internal Working: When the API receives the request, it sends a request to "redsky.target.com" and retrieves the product information. This product information doesn't contain price that is needed by the user. The price is retrieved from a data store. The price information is now combined with the required product information to provide only the required product information to the user.
 
