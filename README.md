@@ -32,6 +32,32 @@ Credential details :-- Username ===> "user"
 
 {"id":13860428,"name":"The Big Lebowski (Blu-ray) (Widescreen)","current_price":{"value": 13.49,"currency_code":"USD"}}
 
-###Errors/Validations: Appropriate error messages are provided after validating the data. More information is available in the below sections. The client application can use the message in the response to display the same to the user appropriately.
+###Errors/Validations: All the validation and error message are handled porperly.Application can display messages to the user.
+
+**## Update Product Price in the datastore**:
+
+###Input: The user/client application can do a PUT request with input similar to the response received in GET and should be able to modify the price in the datastore. The request is done at the same path "/products/{id}". Authorization should be added in request header with basic security credentials.
+
+####Sample Input: JSON Body - {"id":13860428,"name":"The Big Lebowski (Blu-ray) (Widescreen)","current_price":{"value": 15.67,"currency_code":"USD"}}
+
+###Internal Working: When the API receives PUT request, it does some validations to see if the product is available. If it is, it ensures that the id in the URL and the JSON body is similar and if that looks same, the price for the product is modified in the data store.
+
+###Output: Success message is returned if the price modification is done.
+
+###Errors/Validations: All the validation and error message are handled porperly.Application can display messages to the user.
+
+**## Update Product Price in the datastore**:
+
+###Input: The user/client application can do a POST request with input similar to the response received in GET and should be able to create the product details in the datastore if product is not present. The request is done at the same path "/products/{id}". Authorization should be added in request header with basic security credentials.
+
+####Sample Input: JSON Body - {"id":13860428,"name":"The Big Lebowski (Blu-ray) (Widescreen)","current_price":{"value": 15.67,"currency_code":"USD"}}
+
+###Internal Working: When the API receives PUT request, it does some validations to see if the product is available. If it is, it ensures that the id in the URL and the JSON body is similar and if that looks same, the price for the product is modified in the data store.
+
+###Output: Success message is returned if the product is created in DB.
+
+###Errors/Validations: All the validation and error message are handled porperly.Application can display messages to the user.
+
+
 	
 	
