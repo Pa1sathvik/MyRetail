@@ -132,6 +132,15 @@ Hystrix dashboard is used to monitor REST API performance.
 
 ![](images/HystrixDashboard.PNG)
 
+##**Steps to start the application:**
+
+```
+1. Download the project from GIT and run command "mvn clean package" in the project location via cmd prompt.
+2. The above command will generate JAR file with name "MYRetail.jar" in webapp/target/ folder.
+3. Execure JAR file using command in Command prompt "java -Xmx4000m -Xms2000m -jar MYRetail.jar" which will start the application.
+```
+
+
 
 
 	
