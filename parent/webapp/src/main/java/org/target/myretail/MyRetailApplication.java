@@ -1,4 +1,4 @@
-package org.target.myretail;
+package com.target.myretail;
 
 import static springfox.documentation.builders.PathSelectors.regex;
 
