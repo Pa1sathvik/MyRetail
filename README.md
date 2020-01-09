@@ -102,6 +102,18 @@ Set the oracle db parameters as mentioned below:-
  UserName : iat
  Password : iat
  ```
+Create Product table in database using below SQL CREATE command.
+```
+CREATE TABLE PRODUCT 
+   (	"ID" NUMBER(10,0) NOT NULL ENABLE, 
+	"NAME" VARCHAR2(50 BYTE), 
+	"PRICE" NUMBER(6,2), 
+	"CURRENCY" NUMBER(5,0), 
+	"ROW_CREATED" TIMESTAMP (6), 
+	"ROW_UPDATED" TIMESTAMP (6), 
+	 PRIMARY KEY ("ID")
+  );
+```
 2. Install Maven - https://maven.apache.org/install.html
 3. Clone the code or download from git repository - https://github.com/Pa1sathvik/MyRetail.git
 4. Open browser and visit Swagger. http://localhost:8080/swagger-ui.html
