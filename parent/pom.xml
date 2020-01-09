@@ -268,6 +268,19 @@
 			<url>https://repo.spring.io/milestone</url>
 		</repository>
 	</repositories>
-
+<profiles>
+		<profile>
+			<id>prod</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<js.minimize>false</js.minimize>
+				<BUILD_NUMBER>1.0</BUILD_NUMBER>
+				<PATCH_NUMBER>1</PATCH_NUMBER>
+				<BUILD_TYPE>prod</BUILD_TYPE>
+			</properties>
+		</profile>
+	</profiles>
 
 </project>
