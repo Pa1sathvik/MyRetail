@@ -24,6 +24,7 @@
 		<module>restcontroller</module>
 		<module>service</module>
 		<module>authentication</module>
+		<module>webapp</module>
 	</modules>
 
 	<properties>
@@ -245,13 +246,6 @@
 							</manifest>
 						</archive>
 					</configuration>
-					<executions>
-						<execution>
-							<goals>
-								<goal>test-jar</goal>
-							</goals>
-						</execution>
-					</executions>
 				</plugin>
 
 			</plugins>
